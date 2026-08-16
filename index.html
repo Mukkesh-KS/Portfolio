@@ -132,9 +132,9 @@
     margin-bottom:22px;
   }
   .profile-image{
-    width:112px;
-    height:112px;
-    flex:0 0 112px;
+    width:150px;
+    height:150px;
+    flex:0 0 150px;
     object-fit:cover;
     border-radius:50%;
     border:2px solid var(--copper);
@@ -325,8 +325,8 @@
     .resume-action{margin:4px 12px 0 0;}
     header.hero{padding:38px 0 42px;}
     .hero-container{width:min(100% - 36px,650px);}
-    .profile-image{width:95px;height:95px;flex-basis:95px;}
-    .profile{gap:14px;}
+    .profile-image{width:115px;height:115px;flex-basis:115px;}
+    .profile{gap:18px;}
     .profile-info h2{font-size:24px;}
     .hero h1{font-size:43px;}
     .hero-skills{grid-template-columns:1fr 1fr;}
@@ -821,6 +821,30 @@
     .hero-highlight:nth-child(4){border-top:1px solid var(--rule);border-right:none;}
   }
   @media (max-width: 720px){
+    /* Mobile project cards: stack title and badge so neither is clipped */
+    .project-head{
+      display:block;
+      padding:20px 18px;
+      overflow:hidden;
+    }
+    .project-head h3{
+      font-size:24px;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+      word-break:normal;
+    }
+    .project-head .stamp{
+      display:inline-block;
+      margin-top:14px;
+      max-width:100%;
+      white-space:normal;
+      overflow-wrap:anywhere;
+      word-break:normal;
+      line-height:1.45;
+    }
+    .project-body{ padding:20px 18px 22px; }
+    #work .project, #experience .project{ width:100%; max-width:100%; overflow:hidden; }
+
     #about .about-grid{ grid-template-columns: 1fr; }
     .skills-grid{ grid-template-columns: 1fr; }
     .entry{ grid-template-columns: 1fr; gap: 6px; }
