@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukkesh K S - Resume</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            font-size: 11px; 
+            line-height: 1.35;
+        }
+        .resume-wrapper {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            display: flex;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* --- Left Column (Sidebar) --- */
+        .sidebar {
+            width: 32%;
+            background-color: #ffffff; /* Removed background color */
+            color: #000000; /* Changed text to black */
+            padding: 20px 15px; 
+            border-right: 1px solid #e0e0e0; /* Added a subtle divider line */
+        }
+        .profile-pic {
+            width: 115px; 
+            height: 115px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px auto;
+            background-color: #fff;
+            border: 2px solid #ccc; /* Changed border so it shows on white bg */
+        }
+        .sidebar h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1.5px solid #000000; /* Changed border to black */
+            padding-bottom: 2px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+        .sidebar-section {
+            margin-bottom: 12px; 
+        }
+        .sidebar-section strong {
+            display: inline-block;
+            margin-bottom: 1px;
+        }
+        .sidebar-section ul {
+            padding-left: 12px;
+            margin: 3px 0;
+        }
+        .sidebar-section li {
+            margin-bottom: 2px;
+        }
+        
+        /* --- Right Column (Main Content) --- */
+        .main-content {
+            width: 68%;
+            padding: 20px 25px; 
+        }
+        .header {
+            margin-bottom: 12px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px; 
+            color: #000000; /* Changed from blue to black */
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        .header h3 {
+            margin: 4px 0 8px 0;
+            font-size: 14px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        /* Contact Info Styling */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 12px;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .contact-info a i {
+            font-size: 11px;
+            color: #000000; /* Changed icon color to black */
+        }
+
+        .main-content h2 {
+            font-size: 14px;
+            color: #000000; /* Changed from blue to black */
+            border-bottom: 1.5px solid #000000; /* Changed from blue to black */
+            padding-bottom: 2px;
+            margin-top: 0;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .section {
+            margin-bottom: 12px; 
+        }
+        .section p {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 12.5px;
+            color: #000000;
+        }
+        .job-date {
+            color: #666;
+            font-style: italic;
+            font-size: 11px;
+        }
+        .main-content ul {
+            padding-left: 15px;
+            margin-top: 3px;
+            margin-bottom: 8px;
+        }
+        .main-content li {
+            margin-bottom: 3px;
+        }
+        .project-tags {
+            font-size: 10.5px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 3px;
+        }
+
+        /* --- Strict PDF Print Settings --- */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0; 
+            }
+            body {
+                background-color: #ffffff;
+                -webkit-print-color-adjust: exact !important; 
+                print-color-adjust: exact !important;
+                width: 210mm;
+                height: 297mm;
+                overflow: hidden; 
+            }
+            .resume-wrapper {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-wrapper">
+    
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <!-- Photo will display in color normally -->
+        <img src="profile.jpeg" alt="Mukkesh Profile" class="profile-pic" />
+        
+        <div class="sidebar-section">
+            <h2>EDUCATION</h2>
+            <strong>SSN College of Engineering</strong><br>
+            Bachelor of Engineering (B.E.)<br>
+            Electronics and Communication<br>
+            2023-2027
+        </div>
+
+        <div class="sidebar-section">
+            <h2>TECHNICAL SKILLS</h2>
+            <strong>Programming:</strong> C, C++, Python, Java<br>
+            <strong>Embedded Systems:</strong> STM32, ESP32, ESP32-CAM, Arduino, Raspberry Pi<br>
+            <strong>Protocols:</strong> UART, SPI, I2C, CAN, RS485, LoRa, Flexray, Lin<br>
+            <strong>Tools:</strong> KiCad, STM32CubeIDE, VS Code, Git, GitHub, MATLAB<br>
+            <strong>Concepts:</strong> RTOS/FreeRTOS, Sensor Interfacing, Hardware Bring-up, PCB Design, Motor Control, Data Acquisition Systems
+        </div>
+
+        <div class="sidebar-section">
+            <h2>PUBLICATIONS</h2>
+            <strong>First Author - NCICT '26</strong><br>
+            Intelligent Edge Animal Detection and Road Hazard System using STM32, ESP32-CAM, LoRa.<br>
+            Presented at the 11th National Conference on ICT.<br>
+            <strong>Key Research Contributions:</strong>
+            <ul>
+                <li>Optimized TinyCNN models under tight memory constraints on ESP32-CAM.</li>
+                <li>Engineered a long-range, low-power, distributed LoRa mesh network topology.</li>
+                <li>Resolved safety-critical firmware latency loops for high-speed edge warnings.</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>NPTEL-Fuzzy Sets</li>
+                <li>NPTEL-Waste Water Management</li>
+                <li>AI in Engineering</li>
+                <li>Nano to Angstrom - IC Design</li>
+                <li>Conference Presenter - NCICT '26</li>
+                <li>TATA Elxsi Season 3</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>LEADERSHIP</h2>
+            <ul>
+                <li>Treasurer, AECE (2026-2027)</li>
+                <li>Crowd Deputy Head, Instincts '26</li>
+                <li>Registration Head, Invente '25</li>
+                <li>Department Admin, Invente '25</li>
+                <li>Decor Head, Invente '25</li>
+            </ul>
+        </div>
+
+        <!-- Mini Projects moved here to fix page break -->
+        <div class="sidebar-section">
+            <h2>MINI PROJECTS</h2>
+            <ul>
+                <li>Smart IV Monitoring System</li>
+                <li>Machine Fault Detection</li>
+                <li>Smart Traffic Lights</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Right Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <h1>MUKKESH K S</h1>
+            <h3>Firmware & Embedded Systems Engineer</h3>
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <a href="tel:+916381568667">
+                    <i class="fas fa-phone-alt"></i> +91 6381568667
+                </a>
+                <a href="mailto:ksmukkesh70@gmail.com">
+                    <i class="fas fa-envelope"></i> ksmukkesh70@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/mukkesh-k-s" target="_blank">
+                    <i class="fab fa-linkedin"></i> linkedin.com/in/mukkesh-k-s
+                </a>
+                <a href="https://github.com/Mukkesh-KS" target="_blank">
+                    <i class="fab fa-github"></i> github.com/Mukkesh-KS
+                </a>
+                <a href="https://mukkesh-ks.github.io/Portfolio/" target="_blank">
+                    <i class="fas fa-link"></i> Portfolio: https://mukkesh-ks.github.io/Portfolio/
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p>Electronics and Communication Engineering student and Firmware Intern with hands-on experience in embedded systems, firmware development, PCB design, and industrial communication protocols (UART, SPI, I2C, CAN, RS485, LoRa). Experienced in building end-to-end embedded solutions from schematic design and PCB layout to firmware development, debugging, and post-fabrication hardware rework.</p>
+        </div>
+
+        <div class="section">
+            <h2>EXPERIENCE</h2>
+            <div class="job-header">
+                <span class="job-title">Firmware Intern - Welkinrim Technologies</span>
+                <span class="job-date">May 2026 - August 2026</span>
+            </div>
+            <ul>
+                <li><strong>System Architecture & Automation:</strong> Architected application-level firmware for a custom STM32F767-based dual-motor thrust stand, engineering software-configurable PWM generation to simultaneously control two motors via a percentage-based throttle interface, with PWM input monitoring and a virtual COM (USB CDC) link for real-time control from a companion app fully automating ESC calibration and test workflows.</li>
+                <li><strong>Post-Fabrication Diagnostics & Rework:</strong> Led physical board bring-up and salvaged the initial prototype batch via minimally invasive rework (track cuts, jumper wires), bypassing critical manufacturing blockers without a PCB respin.</li>
+                <li><strong>Root-Cause Fault Resolution:</strong> Prevented fatal MCU failure by diagnosing an overvoltage misrouting on the STM32's 1.2V VCAP2 pin; resolved communication and power faults caused by CAN RX/TX swaps, inverted LDO pads, and USB VBUS/VDD misconfigurations.</li>
+                <li><strong>High-Frequency Data Acquisition:</strong> Designed a deterministic data logging pipeline over an 8-channel RS485 network, sampling thrust, torque, ERPM, current, voltage, vibration, and temperature at 100 ms (10 Hz) intervals and timestamping via a battery-backed RTC that persists across power cycles, with data streamed to onboard SD storage.</li>
+                <li><strong>Complex Peripheral Integration:</strong> Built drivers and unified a high-density communication stack for real-time data transfer across 3 independent CAN buses, SPI, I2C, USB-C, Bluetooth, and Wi-Fi.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>PROJECTS</h2>
+            
+            <div class="job-title">LoRa-Based Roadside Animal Hazard Alert System</div>
+            <div class="project-tags">STM32 | ESP32-CAM | LoRa | FreeRTOS | TinyML</div>
+            <ul>
+                <li>Designed and developed a distributed embedded architecture consisting of multiple roadside intelligent nodes.</li>
+                <li>Implemented TinyCNN-based TinyML inference on ESP32-CAM for real-time animal detection directly on edge devices.</li>
+                <li>Developed FreeRTOS-based task scheduling for image acquisition, motion detection, communication, and alert management.</li>
+            </ul>
+
+            <div class="job-title">Handsfree Electrolarynx with ANC (Final Year Project, Ongoing)</div>
+            <div class="project-tags">STM32 | Active Noise Cancellation | Signal Processing | Embedded Audio</div>
+            <ul>
+                <li>Designing what is positioned as the first fully handsfree electrolarynx device, eliminating the need for manual hand placement against the throat during speech.</li>
+                <li>Implementing adaptive pitch control to dynamically adjust output tone for more natural-sounding speech.</li>
+                <li>Engineering a dual-microphone active noise cancellation (ANC) system to actively cancel the device's mechanical buzz and deliver clearer voice output.</li>
+            </ul>
+
+            <div class="job-title">Multi-Channel PWM/ESC Control & Load Cell Data Acquisition System</div>
+            <div class="project-tags">Arduino Uno | ESP32-S3 | ADS131M06 | UART | PWM | CAN | RS485 | KiCad</div>
+            <ul>
+                <li>Designed a custom hardware shield driving 12 ESCs simultaneously, with protection circuitry for PWM signal integrity and UART-based firmware to receive, parse, and execute timestamped PWM commands.</li>
+                <li>Designed a custom industrial-grade PCB integrating an ADS131M06 high-resolution ADC for simultaneous multi-channel load-cell acquisition, with CAN and RS485 interfaces for industrial networking and field deployment.</li>
+            </ul>
+
+            <div class="job-title">Smart Helmet for Rider Safety (Ongoing)</div>
+            <div class="project-tags">STM32 | GPS | IMU | Haptic Feedback</div>
+            <ul>
+                <li>System Design & Crash Detection: Developing an IoT rider safety platform using an STM32 with continuous fall-detection algorithms via motion sensors.</li>
+                <li>Emergency Telemetry: Integrating GPS protocols for automated coordinate transmission alongside structural...</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
